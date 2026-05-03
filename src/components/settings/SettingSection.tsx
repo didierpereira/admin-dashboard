@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
+import React from "react";
+import type { LucideIcon } from "lucide-react";
 
-const SettingSection = ({ icon: Icon, title, children }) => {
+interface SettingSectionProps {
+  icon: LucideIcon;
+  title: string;
+  children: React.ReactNode;
+}
+
+const SettingSection = ({ icon: Icon, title, children }: SettingSectionProps) => {
 	return (
 		<motion.div
 			className='bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl p-6 border border-gray-700 mb-8'

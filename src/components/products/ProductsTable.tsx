@@ -14,7 +14,7 @@ const ProductsTable = () => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredProducts, setFilteredProducts] = useState(PRODUCT_DATA);
 
-	const handleSearch = (e) => {
+	const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const term = e.target.value.toLowerCase();
 		setSearchTerm(term);
 		const filtered = PRODUCT_DATA.filter(

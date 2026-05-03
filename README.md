@@ -1,73 +1,95 @@
-# React + TypeScript + Vite
+# Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un dashboard administrativo moderno y completo construido con React 19, TypeScript y Tailwind CSS. Ideal para mostrar habilidades advanced de frontend en un portfolio profesional.
 
-Currently, two official plugins are available:
+![Dashboard Preview](./public/screenshot-for-readme-1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Ver Demo →](https://admin-dashboard-ruby-nine-94.vercel.app/)**
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tecnología | Propósito |
+|------------|----------|
+| [React 19](https://react.dev) | UI Framework con concurrent features |
+| [TypeScript](https://www.typescriptlang.org) | Tipado estático |
+| [Vite](https://vite.dev) | Build tool ultra-rápido |
+| [Tailwind CSS](https://tailwindcss.com) | Styling utility-first |
+| [Recharts](https://recharts.org) | Gráficos interactivos |
+| [Framer Motion](https://www.framer.com/motion) | Animaciones fluidas |
+| [Lucide React](https://lucide.dev) | Iconos |
+| [React Router](https://reactrouter.com) | Navegación |
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Dashboard Overview** — Métricas clave con tarjetas animadas y gráficos de tendencias
+- **Analytics** — Análisis profundo con retención de usuarios, segmentación, e insights IA
+- **Sales** — Seguimiento de ventas por categoría y canales
+- **Products** — Gestión de productos con tabla interactiva
+- **Users** — Tabla de usuarios con gráficos demográficos y heatmap de actividad
+- **Orders** — Órdenes diarias con distribución visual
+- **Settings** — Perfil, seguridad, notificaciones, cuentas conectadas, danger zone
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Highlights Técnicos
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Componentes completamente tipados con TypeScript
+- Animaciones suaves con Framer Motion
+- Gráficos profesionales con Recharts
+- Diseño responsivo con Tailwind CSS
+- Arquitectura limpia: páginas + componentes especializados
+- Navegación con React Router
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── analytics/     # Componentes de Analytics
+│   ├── common/       # Header, Sidebar
+│   ├── orders/      # Componentes de Orders
+│   ├── overview/    # Componentes de Overview
+│   ├── products/   # Componentes de Products
+│   ├── sales/      # Componentes de Sales
+│   ├── settings/   # Componentes de Settings
+│   └── users/      # Componentes de Users
+├── pages/           # 7 páginas del dashboard
+├── App.tsx          # Router principal
+└── main.tsx         # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Clonar el proyecto
+git clone https://github.com/didierpereira/admin-dashboard.git
+cd admin-dashboard
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Instalar dependencias
+npm install
+
+# Iniciar dev server
+npm run dev
+
+# Build para producción
+npm run build
 ```
+
+## ¿Por qué este proyecto para tu portfolio?
+
+Este dashboard demuestra:
+
+1. **Control de React moderno** — Componentes, estado, efectos, concurrent features
+2. **TypeScript en serio** — Tipado completo, sin `any`, interfaces bien definidas
+3. **Tailwind CSS** — Diseño utility-first, consistencia, theming
+4. **Visualización de datos** — Gráficos que cuentan historias, no solo adornan
+5. **Animaciones que importan** — Framer Motion para UX, no solo decorado
+6. **Arquitectura escalable** — Separación clara entre páginas y componentes
+
+---
+
+## Contacto
+
+- **Portfolio**: [didier-portfolio.vercel.app](https://didier-portfolio.vercel.app/)
+- **LinkedIn**: [linkedin.com/in/didierpereira](https://www.linkedin.com/in/didierpereira/)
+- **GitHub**: [github.com/didierpereira](https://github.com/didierpereira)
+
+¡Trabajás en un proyecto interesante? ¡Hablamos!¡
